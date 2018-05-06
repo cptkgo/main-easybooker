@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.esaybooker.app" version="1.5.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Easybooker QR</name>
+    <name>Easybooker</name>
     <description>
         Easybooker online reservaties ontvangen en beheren via de snelle en gebruiksvriendelijke mobiele applicatie.
     </description>

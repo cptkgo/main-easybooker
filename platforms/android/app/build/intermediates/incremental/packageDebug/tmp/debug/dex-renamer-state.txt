@@ -1,0 +1,19 @@
+#Sun Apr 29 13:40:18 CEST 2018
+path.1=classes.dex
+path.0=classes.dex
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.5=/Users/kgo/Desktop/easybooker/Easybooker 2/platforms/android/app/build/intermediates/transforms/dexMerger/debug/11
+base.4=/Users/kgo/Desktop/easybooker/Easybooker 2/platforms/android/app/build/intermediates/transforms/dexMerger/debug/14
+base.3=/Users/kgo/Desktop/easybooker/Easybooker 2/platforms/android/app/build/intermediates/transforms/dexMerger/debug/13
+base.2=/Users/kgo/Desktop/easybooker/Easybooker 2/platforms/android/app/build/intermediates/transforms/dexMerger/debug/16
+base.1=/Users/kgo/Desktop/easybooker/Easybooker 2/platforms/android/app/build/intermediates/transforms/dexMerger/debug/15
+base.0=/Users/kgo/Desktop/easybooker/Easybooker 2/platforms/android/app/build/intermediates/transforms/dexMerger/debug/12
+path.5=classes.dex
+path.4=classes.dex
+path.3=classes.dex
+path.2=classes.dex

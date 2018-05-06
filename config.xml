@@ -80,6 +80,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <preference name="InAppBrowserStorageEnabled" value="true"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.1.1"/>
     <vs:features>
         <vs:feature>onesignal-cordova-plugin</vs:feature>
@@ -97,4 +98,6 @@
 <!-- Can omit if not targetting Windows Phone -->
 <preference name="windows-appx-target" value="8.1-phone" />
 <preference name="WindowsToastCapable" value="true" />
+=======
+>>>>>>> parent of 8b3c497... add onesignal
 </widget>

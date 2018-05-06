@@ -79,7 +79,7 @@
     <preference name="android-build-tool" value="gradle" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <preference name="InAppBrowserStorageEnabled" value="true"/>
-    <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.1.1"/>
+    <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="2.1.1"/>
     <vs:features>
         <vs:feature>onesignal-cordova-plugin</vs:feature>
     </vs:features>

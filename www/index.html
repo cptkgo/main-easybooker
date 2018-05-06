@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Easybooker</title>
+        
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        
+        <script type="text/javascript" charset="utf-8">
+            
+            // Wait for device API libraries to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            // device APIs are available
+            //
+            function onDeviceReady() {
+                
+                authk = window.location.hash.substr(1)
+                //alert(authk);
+                if(authk.length == 150){
+                    // alert("authkey OK!");
+                    authk = '#'+authk;
+                    document.cookie = 'authkey=' + authk + '; expires=31 Dec 2030 23:59:59 GMT';
+                }else{
+                    auth = '#';
+                }
+                var ref = window.open('https://napp.easybooker.be'+authk, '_blank', 'location=no,toolbar=no,closebuttoncaption=Sluiten,EnableViewPortScale=no');
+                ref.addEventListener( "loadstart", function(event) {
+                     var lin = event.url;
+                     if(lin.indexOf('https://napp.easybooker.be/index.php#') >= 0){
+                         function getAuthke(aut){
+                            return aut.split('#')[1];
+                         }
+                         // alert(getAuthke(lin));
+                         if(getAuthke(lin).length == 150){
+                             authk = '#' + getAuthke(lin);
+                             //alert(authk);
+                             document.cookie = 'authkey=' + authk.substr(1) + '; expires=31 Dec 2030 23:59:59 GMT';
+                         }
+                     }
+                     if(event.url == 'https://napp.easybooker.be/open/scanner'){
+                         window.location.replace('scanner.html'+authk);
+                     }
+                     if(event.url == 'close.html'){
+                         ref.close();
+                     }
+                 });
+                ref.addEventListener('loadstop', function(event) {});
+                ref.addEventListener('loaderror', function(event) {});
+                ref.addEventListener('exit', function(event) {});
+                var notificationOpenedCallback = function(jsonData) {
+                    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+                };
+                
+                window.plugins.OneSignal
+                .startInit("57af9006-12c3-4945-b39a-5198f3261caa")
+                .handleNotificationOpened(notificationOpenedCallback)
+                .endInit();
+            }
+        
+            </script>
+    </head>
+    <body>
+    </body>
+</html>
